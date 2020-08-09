@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.img-border{
+    margin: 0 auto;
+    text-align: center;
+}
+img.double-border {
+    border: 5px solid #ddd;
+    padding: 5px;
+
+}

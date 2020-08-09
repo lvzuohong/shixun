@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+table.imagetable {
+    margin: auto;
+    font-family: verdana,arial,sans-serif;
+    font-size:16px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #a9c6c9;
+    border-collapse: collapse;
+}
+table.imagetable th {
+    background:#b5cfd2;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+table.imagetable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #999999;
+}
+.oddrowcolor{
+    background-color: #d4d4d4;
+}
+.evenrowcolor{
+    background-color: #e4e4e4;
+}
