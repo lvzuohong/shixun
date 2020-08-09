@@ -57,7 +57,7 @@ def get_detailed_info(aim_url,aim_name):
 		ist=ist.replace("证券营业部","")
 		mid.append(ist)
 	test_dict={"股票名称":[aim_name]*10,'营业部':mid,"买/卖":['买','买','买','买','买','卖','卖','卖','卖','卖'],
-		"榜位":[1,2,3,4,5,1,2,3,4,5],'金额':amounts}
+		"榜位":[1,2,3,4,5,1,2,3,4,5],'金额/万':amounts}
 	df=pd.DataFrame(test_dict)
 	time.sleep(2)
 	return df
@@ -85,7 +85,7 @@ def get_huaxin(data):
 
 def get_hot_money(data,hot_money_name):
 	
-	hm_df=pd.DataFrame(columns=['股票名称','营业部','买/卖','榜位','金额'])
+	hm_df=pd.DataFrame(columns=['股票名称','营业部','买/卖','榜位','金额/万'])
 	for idx,row in enumerate(data['营业部']):
 		if row in hot_money_name:
 			hm_df=hm_df.append(data[idx:idx+1])
